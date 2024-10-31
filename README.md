@@ -11,11 +11,11 @@ Para correr la app se necesita realizar lo siguiente:
 
 -Tener instalado Docker 26.0.1
 -Realizar un clone del respositorio: 
-    git clone -------
+    git clone https://github.com/pablolupo84/api-rest
 -Sobre el directorio raiz: 
-    cd gestion-usuarios
+    cd api-rest
     docker compose up
 
-#carrito_de_compras
-http://localhost:8000/
+#carrito_de_compras Productos
+http://localhost:8000/productos
 
