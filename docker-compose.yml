@@ -1,0 +1,26 @@
+#version: "3.9" -> warning de obsoleto
+
+services:
+  #servicio_carrito_de_compras
+  servicio_carrito_de_compras:
+    build:
+      context: .
+      dockerfile: ./carrito_de_compras/Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./carrito_de_compras/.env
+    volumes:
+    # - ./carrito_de_compras:/app/carrito_de_compras
+     - ./logs:/app/logs
+  #servicio_test
+  #servicio_test:
+    #build:
+      #context: .
+      #dockerfile: ./tests/Dockerfile
+    #env_file:
+    #  - ./tests/.env
+    #depends_on:
+    #  - servicio_autenticacion
+    #  - servicio_usuario
+    #command: /app/tests/script-bash.sh
